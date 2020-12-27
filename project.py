@@ -10,7 +10,7 @@ option=""
 index=1
 
 def showResult(lessonName,note):
-    text=f"{lessonName} dersinden geçtiniz.Harfi notunuz: "
+    text=f"{lessonName} passed this lesson. Grade Note: "
     if note>90:
         text+="AA"
     elif note>70:
@@ -20,7 +20,7 @@ def showResult(lessonName,note):
     elif note>30:
         text+="DD"
     else:
-        text=f"{lessonName} dersinden kaldınız.Harfi notunuz:FF "
+        text=f"{lessonName} failed this lesson.Grade Note:FF "
     return text
 
 for i in range(0,3):
@@ -45,8 +45,8 @@ for y in range(0,5):
     choose=int(input("Please enter lesson number:"))
     studentLesson.append(lessonList[choose-1])
     studentLessonCount+=1
-    option=input("ders seçimine devam etmek istiyor musun? E/H")
-    if option=="H" or option=="h":
+    option=input("Could you select continue lesson ? Y / N")
+    if option=="N" or option=="n":
         break
     if studentLessonCount==5:
         break
