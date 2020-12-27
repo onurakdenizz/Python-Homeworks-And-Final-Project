@@ -1,0 +1,11 @@
+
+firstNumber=int(input("First value(int): "))
+secNumber=input("First value(str): ")
+thiNumber=float(input("First value(float): "))
+fouNumber=bool(input("First value(bool): "))
+fifNumber=list(input("First value(list): "))
+print(f"Your value: {firstNumber} and Your value type:{type(firstNumber)}")
+print(f"Your value: {secNumber} and Your value type:{type(secNumber)}")
+print(f"Your value: {thiNumber} and Your value type:{type(thiNumber)}")
+print(f"Your value: {fouNumber} and Your value type:{type(fouNumber)}")
+print(f"Your value: {fifNumber} and Your value type:{type(fifNumber)}")
